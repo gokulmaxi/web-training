@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wallpapers</title>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+        text-align:center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    li {
+    display: inline;
+     }
+
+    .flex-container {
+      display: flex;
+    flex-flow: row wrap;
+
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .flex-item {
+      width: 25%;
+      height: 300px;
+      margin: 10px;
+      background-size: cover;
+      background-position: center center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .flex-item:hover {
+      transform: scale(1.05);
+    }
+
+    .image-1 {
+      background-image: url('img/1.png');
+    }
+
+    .image-2 {
+      background-image: url('img/2.png');
+    }
+
+    .image-3 {
+      background-image: url('img/3.png');
+    }
+
+    .image-4 {
+      background-image: url('img/4.jpg');
+    }
+
+    .image-5 {
+      background-image: url('img/5.png');
+    }
+    .image-6 {
+      background-image: url('img/6.png');
+    }
+    .image-7 {
+      background-image: url('img/7.png');
+    }
+    .image-8 {
+      background-image: url('img/8.jpg');
+    }
+    .image-9 {
+      background-image: url('img/9.jpg');
+    }
+    /* Add more images as needed */
+
+    @media screen and (max-width: 768px) {
+      .flex-item {
+        width: 50%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .flex-item {
+        width: 100%;
+      }
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="index.html">Wrap</a>
+        </li>
+        <li>
+            <a href="column.html">Column</a>
+        </li>
+        <li>
+            <a href="reverse-column.html">reverse column</a>
+        </li>
+        <li>
+            <a href="row.html">row</a>
+        </li>
+        <li>
+            <a href="justify-content.html">justify-end</a>
+        </li>
+        <li>
+            <a href=
+            "just-space-around.html">justify-space-around</a>
+        </li>
+    </ul>
+    <div class="flex-container">
+        <div class="flex-item image-1"></div>
+        <div class="flex-item image-2"></div>
+        <div class="flex-item image-3"></div>
+        <div class="flex-item image-4"></div>
+        <div class="flex-item image-5"></div>
+        <div class="flex-item image-6"></div>
+        <div class="flex-item image-7"></div>
+        <div class="flex-item image-8"></div>
+        <div class="flex-item image-9"></div>
+        <!-- Add more images as needed -->
+    </div>
+</body>
+</html>

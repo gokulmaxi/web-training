@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Centered Grid Layout with CSS Grid</title>
+    <style>
+         .container {
+             display: grid;
+             grid-template-columns: 24% 24% 24% 24% ;
+             grid-template-rows: 200px 200px;
+             grid-gap: 20px;
+             justify-items: center;
+             align-items: center;
+             padding: 20px;
+             animation: resize 10s ease infinite both;
+         }
+         .grid-item {
+             width: 100%;
+             height: 100%;
+             margin: 10px;
+             background-size: cover;
+             background-position: center center;
+             transition: transform 0.3s ease-in-out;
+         }
+
+         .grid-item:hover {
+             transform: scale(1.05);
+         }
+
+         .image-1 {
+             background-image: url('img/1.png');
+         }@keyframes resize {
+             0% {
+             grid-template-columns: 24% 24% 24% 24% ;
+             grid-template-rows: 200px 200px;
+             }
+
+             12% {
+             grid-template-columns: 36% 20% 20% 20% ;
+             grid-template-rows: 300px 100px;
+             }
+             22% {
+             grid-template-columns: 36% 20% 20% 20% ;
+             grid-template-rows: 100px 300px;
+             }
+
+             33% {
+             grid-template-columns: 20% 36% 20% 20% ;
+             grid-template-rows: 100px 300px;
+             }
+             44% {
+             grid-template-columns: 20% 36% 20% 20% ;
+             grid-template-rows: 300px 100px;
+             }
+             55% {
+             grid-template-columns: 20% 20% 36% 20% ;
+             grid-template-rows: 300px 100px;
+             }
+             66% {
+             grid-template-columns: 20% 20% 36% 20% ;
+             grid-template-rows: 100px 300px;
+             }
+             77% {
+             grid-template-columns: 20% 20% 20% 36% ;
+             grid-template-rows: 100px 300px;
+             }
+             88% {
+             grid-template-columns: 20% 20% 20% 36% ;
+             grid-template-rows: 300px 100px;
+             }
+             100% {
+             grid-template-columns: 20% 20% 20% 36% ;
+             grid-template-rows: 100px 300px;
+             }
+         }
+         /* Animation keyframes */
+         @keyframes rocket-flight {
+             0%   {top: 0px;}
+             25%  {top: 200px;}
+         }
+
+         .image-2 {
+             background-image: url('img/2.png');
+         }
+
+         .image-3 {
+             background-image: url('img/3.png');
+         }
+
+         .image-4 {
+             background-image: url('img/4.jpg');
+         }
+
+         .image-5 {
+             background-image: url('img/5.png');
+         }
+         .image-6 {
+             background-image: url('img/6.png');
+         }
+         .image-7 {
+             background-image: url('img/7.png');
+         }
+         .image-8 {
+             background-image: url('img/8.jpg');
+         }
+         .image-9 {
+             background-image: url('img/9.jpg');
+         }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-item image-1"></div>
+        <div class="grid-item image-2"></div>
+        <div class="grid-item image-3"></div>
+        <div class="grid-item image-4"></div>
+        <div class="grid-item image-5"></div>
+        <div class="grid-item image-6"></div>
+        <div class="grid-item image-7"></div>
+        <div class="grid-item image-8"></div>
+    </div>
+</body>
+</html>

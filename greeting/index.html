@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A. P. J. Abdul Kalam</title>
+    <style>
+                body {
+                        font-family: Arial, sans-serif;
+                        background-color: #F5F5F5;
+                }
+
+                .container {
+                        max-width: 800px;
+                        margin: 0 auto;
+                        padding: 20px;
+                        background-color: #FFFFFF;
+                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                        border-radius: 10px;
+                }
+
+                h1, h2 {
+                        color: #008080;
+                        text-align: center;
+                        margin-top: 0;
+                }
+
+                h1 {
+                        font-size: 48px;
+                        margin-bottom: 10px;
+                }
+
+                h2 {
+                        font-size: 36px;
+                        margin-bottom: 20px;
+                }
+
+                p {
+                        font-size: 18px;
+                        line-height: 1.5;
+                        text-align: justify;
+                        margin-bottom: 20px;
+                }
+
+                img {
+                        display: block;
+                        margin: 0 auto;
+                        max-width: 100%;
+                        height: auto;
+                }
+
+                .list {
+                        margin-bottom: 20px;
+                }
+
+                .list-item {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 10px;
+                }
+
+                .list-item img {
+                        max-width: 50px;
+                        height: auto;
+                        margin-right: 10px;
+                }
+
+                .list-item p {
+                        margin: 0;
+                        font-size: 16px;
+                }
+
+      #rocket {
+        width: 50px;
+        position: fixed;
+        bottom: 40%;
+        left: 2%;
+          animation: rocket-flight 10s infinite;
+      }
+
+      #tank{
+        width: 100px;
+        position: fixed;
+        bottom: 0%;
+        left: 0%;
+          animation: tank-move 10s infinite;
+      }
+      /* Animation keyframes */
+      @keyframes rocket-flight {
+        0% { transform: rotate(360deg) translateX(0px) translateY(0px); }
+        50% { transform: rotate(-360deg) translateX(80px) translateY(80px); }
+        100% { transform:  translateX(0px) translateY(-400px) skewX(30deg)}
+      }
+
+      @keyframes tank-move {
+        0% { transform:  translateX(0px) ; }
+        50% { transform:  translateX(100px);}
+        51% { transform:  translateX(100px) scaleX(-1);}
+        100% { transform:  translateX(0px) scaleX(-1);}
+      }
+      /* Heart animation styles */
+      .heart {
+        position: fixed;
+        bottom: 50%;
+        right: 5%;
+        animation: heartbeat 1s infinite;
+      }
+
+      /* Animation keyframes */
+      @keyframes heartbeat {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>A. P. J. Abdul Kalam</h1><img src=
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/A._P._J._Abdul_Kalam.jpg/220px-A._P._J._Abdul_Kalam.jpg"
+        alt="A. P. J. Abdul Kalam">
+        <h2>The Missile Man of India</h2>
+        <p><span class="highlight">A. P. J. Abdul Kalam</span> was
+        an Indian scientist and politician who served as the 11th
+        President of India from 2002 to 2007. He was born on
+        October 15, 1931, in Rameswaram, Tamil Nadu, and passed
+        away on July 27, 2015. He was known as the "People's
+        President" for his friendly and accessible nature.</p>
+        <p>Dr. Kalam was a renowned scientist who played a key role
+        in the development of India's civilian space program and
+        military missile systems. He was also known for his
+        contributions to India's nuclear weapons program.</p>
+        <p>Throughout his life, Dr. Kalam received numerous awards
+        and honors, including the Padma Bhushan, Padma Vibhushan,
+        and Bharat Ratna, India's highest civilian honors. He was
+        also a recipient of several international awards,</p>
+    </div>
+    <div class="heart">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height=
+        "50" fill="#EF5350" class="bi bi-heart-fill" viewbox=
+        "0 0 16 16">
+        <path fill-rule="evenodd" d=
+        "M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z">
+        </path></svg>
+    </div><img id="rocket" src="rocket.png" alt="rocket"> <img id=
+    "tank" src="tank.png" alt="rocket">
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Media Query</title>
+    <meta name="description" content="">
+    <meta name="viewport" content=
+    "width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <style>
+     body {
+         background-color: pink;
+     }
+     .myimage {
+         position:absolute;
+         right:0%;
+         top: 50%;
+         width: 100%;
+         height: 100px;
+     }
+     @media screen and (min-width: 480px) {
+         body {
+             background-color: lightgreen;
+         }
+     .myimage {
+         position:absolute;
+         right:0%;
+         width: 100px;
+         height: 100px;
+    content: url("push.png")
+     }
+     }
+    </style>
+</head>
+<body>
+    <h1>Resize the browser window to see the
+    effect!</h1><img class="myimage" src="stuck.jpg" alt="push">
+</body>
+</html>

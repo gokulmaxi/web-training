@@ -1,0 +1,38 @@
+div.a {
+  width: 150px;
+  height: 80px;
+  background-color: #2196F3;
+  transform: rotate(20deg);
+}
+
+div.b {
+  width: 150px;
+  height: 80px;
+  background-color: #2196F3;
+  transform: skewY(20deg);
+}
+
+div.c {
+  width: 150px;
+  height: 80px;
+  background-color: #2196F3;
+  transform: scaleY(1.5);
+}
+div.d {
+  width: 150px;
+  height: 80px;
+  background-color: #2196F3;
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+div.d:hover {
+  width: 150px;
+  height: 80px;
+  background-color: #2196F3;
+  transform: matrix(1, -0.3, 1, 0, 0, 0);
+}
+div.e {
+  width: 150px;
+  word-wrap: break-word;
+  background-color: #2196F3;
+}
