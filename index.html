@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Work List</title>
+    <style>
+      /* reset default styles */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* styles for table */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      table th, table td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      table th {
+        background-color: #f2f2f2;
+      }
+
+      /* styles for links */
+      a {
+        color: #0077cc;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* styles for table responsive on small screens */
+      @media (max-width: 600px) {
+        table {
+          display: block;
+        }
+
+        table th, table td {
+          display: block;
+          width: 100%;
+          text-align: center;
+          border: none;
+        }
+
+        table td {
+          border-bottom: 1px solid #ddd;
+        }
+      }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Work Name</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>self resume</td>
+                <td>
+                    <a href="resume-html">resume</a>
+                </td>
+            </tr>
+            <tr>
+                <td>greeting</td>
+                <td>
+                    <a href="greeting">Greetings/</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Flex grid</td>
+                <td>
+                    <a href="flex-grid">Flex grid</a>
+                </td>
+            </tr>
+            <tr>
+                <td>grid with animation</td>
+                <td>
+                    <a href="grid-layout">grid layout</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
